@@ -1,0 +1,37 @@
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content 'width=device-width, initial-scale=1.0'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>对地观测课程实验成果展示</title>
+
+    <link rel="stylesheet" href="ol.css" type="text/css">
+    <script src="ol.js" type="text/javascript"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+    <div id="map">
+        <div id="layerControl" class="layerControl">
+            <div class="title"><label>图层列表</label></div>
+            <ul id='layerTree' class='layerTree'></ul>
+        </div>
+    </div>
+    <div id="popup" class="ol-popup">
+        <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+        <div id="popup-content"></div>
+    </div>
+    <div id='search'style="position:absolute;top:50px;left:60px;z-index:999;">
+        <input type="text" id="textName" value='东风渠'>
+        <button type="button" id="research_btn">搜索</button>
+    </div>
+
+<script src="layers_selection.js" type="text/javascript"></script>
+<script src='properties.js' type='text/javascript'></script>
+<script src='search_fun.js' type='text/javascript'></script>
+
+</body>
+<html>
